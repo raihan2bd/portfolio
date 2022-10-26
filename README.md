@@ -1,8 +1,6 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Portfolio Mobile First Project
 
-# Hello Microverse
-
-> A simple and basic html, css project. That print hello messege in the html.
+> A simple and basic responsive mobile first portfolio project using basic html, and css.
 
 ## Built With
 
