@@ -1,1 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.html,
+body {
+  font-family: Poppins, sans-serif;
+}
+
+.header_nav {
+  min-height: 10vh;
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+  font-weight: 700;
+  line-height: 20px;
+  font-size: 22px;
+  color: #6070ff;
+}
+
+.header_menu {
+  padding: 3px 5px;
+}
+
+.menu_icon {
+  width: 24px;
+  height: auto;
+}
+
+.headline {
+  padding: 25px;
+  min-height: 80vh;
+  display: flex;
+  background-size: contain;
+  flex-direction: column;
+  background-image: url("./images/header-shapes-mobile.png");
+}
+
+.headline_title {
+  margin-top: 60px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.headline_content {
+  color: #344563;
+  font-weight: 400;
+  margin: 15px 0;
+  background: #fff;
+}
+
+.social_title {
+  color: #949494;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.social_links {
+  list-style: none;
+  display: flex;
+  margin-top: 10px;
+}
+
+.social_link a {
+  margin-right: 10px;
+  margin-top: 10px;
+  width: 15px;
+}
+
+.social_icon {
+  max-width: 100%;
+}
