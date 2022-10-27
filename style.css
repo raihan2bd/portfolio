@@ -9,19 +9,30 @@ body {
   font-family: Poppins, sans-serif;
 }
 
+.blue {
+  color: #6070ff;
+}
+
 .header_nav {
-  min-height: 10vh;
   display: flex;
+  min-height: 10vh;
   padding: 10px 20px;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header_logo {
+  font-size: 22px;
   font-weight: 700;
   line-height: 20px;
-  font-size: 22px;
-  color: #6070ff;
+}
+
+.header_logo a {
+  text-decoration: none;
+}
+
+.header_logo a:hover {
+  color: #172b4d;
 }
 
 .header_menu {
@@ -35,44 +46,44 @@ body {
 
 .headline {
   padding: 25px;
-  min-height: 80vh;
   display: flex;
+  min-height: 50vh;
   background-size: contain;
   flex-direction: column;
+  background-repeat: space;
   background-image: url("./images/header-shapes-mobile.png");
 }
 
 .headline_title {
-  margin-top: 60px;
   font-size: 40px;
+  margin-top: 60px;
   font-weight: 700;
-  line-height: 52px;
   color: #172b4d;
+  line-height: 52px;
 }
 
 .headline_content {
+  margin: 15px 0;
   color: #344563;
   font-weight: 400;
-  margin: 15px 0;
   background: #fff;
 }
 
 .social_title {
-  color: #949494;
   font-size: 16px;
   font-weight: normal;
 }
 
 .social_links {
-  list-style: none;
   display: flex;
+  list-style: none;
   margin-top: 10px;
 }
 
 .social_link a {
-  margin-right: 10px;
-  margin-top: 10px;
   width: 15px;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 .social_icon {
