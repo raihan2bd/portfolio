@@ -119,7 +119,7 @@ a:hover {
   border-radius: 10px;
   min-height: 3em;
   border: 1px solid #c6c6c6;
-  padding: 20px;
+  padding: 20px 15px;
   display: grid;
 }
 
@@ -150,19 +150,22 @@ a:hover {
 .work_info {
   display: flex;
   overflow: hidden;
-  flex-wrap: wrap;
   color: #7a869a;
 }
 
-.work_info > li {
-  margin-right: 10px;
+.w_info_item {
+  margin-right: 15px;
   list-style-position: inside;
 }
 
-.w_s {
+.w_info_item:first-child {
   font-weight: bold;
   list-style: none;
   color: #344563;
+}
+
+.w_info_item:last-child {
+  margin-right: 0;
 }
 
 .work_details_content {
@@ -189,14 +192,14 @@ a:hover {
 }
 
 .default_btn {
+  cursor: pointer;
   font-size: 18px;
-  color: #396df2;
   margin-top: 20px;
+  color: #396df2;
   padding: 10px 20px;
   background: #fff;
   border-radius: 10px;
   border: 1px solid #396df2;
-  cursor: pointer;
 }
 
 .default_btn:hover {
@@ -225,11 +228,19 @@ a:hover {
   line-height: 20px;
   font-weight: bold;
   margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.down_arrow_icon {
+  width: 10px;
+  height: 10px;
+  overflow: hidden;
 }
 
 .arrow_icon {
-  width: 8px;
-  margin-left: 20px;
+  width: 10px;
+  height: 14px;
   overflow: hidden;
 }
 
