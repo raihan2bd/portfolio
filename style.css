@@ -45,7 +45,7 @@ a:hover {
   height: auto;
 }
 
-/* Css styles for main_container*/
+/* Css styles for main_container */
 .main_container {
   display: grid;
   row-gap: 25px;
@@ -65,6 +65,7 @@ a:hover {
 .headline_title {
   font-size: 40px;
   margin-top: 60px;
+  margin-bottom: 20px;
   font-weight: 700;
   color: #172b4d;
   line-height: 52px;
@@ -102,7 +103,6 @@ a:hover {
   max-width: 100%;
 }
 
-
 /* Css Styles for work section */
 
 .work {
@@ -121,7 +121,6 @@ a:hover {
   border: 1px solid #c6c6c6;
   padding: 20px;
   display: grid;
-  /* grid-template-columns: 1fr 1fr; */
 }
 
 .work_preview {
@@ -142,26 +141,23 @@ a:hover {
 
 .work_title {
   margin: 10px 0;
-  color: #172B4D;
+  color: #172b4d;
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
-
 }
 
 .work_info {
   display: flex;
   overflow: hidden;
   flex-wrap: wrap;
-  color: #7A869A;
-
+  color: #7a869a;
 }
 
 .work_info > li {
   margin-right: 10px;
   list-style-position: inside;
 }
-
 
 .w_s {
   font-weight: bold;
@@ -184,7 +180,7 @@ a:hover {
 .work_cats > li {
   padding: 8px;
   list-style: none;
-  color: #6070FF;
+  color: #6070ff;
   border-radius: 8px;
   margin-right: 8px;
   background: #ebebff;
@@ -192,7 +188,7 @@ a:hover {
   line-height: 16px;
 }
 
-.work_btn {
+.default_btn {
   font-size: 18px;
   color: #396df2;
   margin-top: 20px;
@@ -200,6 +196,56 @@ a:hover {
   background: #fff;
   border-radius: 10px;
   border: 1px solid #396df2;
+  cursor: pointer;
+}
+
+.default_btn:hover {
+  color: #fff;
+  background: #396df2;
 }
 
 /* Css styles for about section */
+
+.about {
+  display: grid;
+  row-gap: 15px;
+  padding: 0 15px;
+}
+
+.about_ul {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+.sub_title {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.arrow_icon {
+  width: 8px;
+  margin-left: 20px;
+  overflow: hidden;
+}
+
+.ul_item {
+  padding: 10px;
+  color: #253858;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  background: #f7f7f9;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.ul_item img {
+  width: 40px;
+  margin-right: 20px;
+}
