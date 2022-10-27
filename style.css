@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+a:hover {
+  color: #172b4d;
+}
+
 .html,
 body {
   font-family: Poppins, sans-serif;
@@ -29,10 +33,6 @@ body {
 
 .header_logo a {
   text-decoration: none;
-}
-
-.header_logo a:hover {
-  color: #172b4d;
 }
 
 .header_menu {
@@ -84,6 +84,10 @@ body {
   width: 15px;
   margin-top: 10px;
   margin-right: 10px;
+}
+
+.social_link a:hover {
+  color: #172b4d;
 }
 
 .social_icon {
