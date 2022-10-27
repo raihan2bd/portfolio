@@ -1,14 +1,31 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Portfolio Mobile First Project
 
-# Hello Microverse
-
-> A simple and basic html, css project. That print hello messege in the html.
+> A simple and basic responsive mobile first portfolio project using basic html, and css.
 
 ## Built With
 
 - Html and CSS
 - Technologies used
   I use nodejs and git for linting the project
+
+## Getting Started
+
+Please follow the instructions to clone my repo
+
+To get a local copy, follow these simple example steps.
+
+Clone this repository or download the Zip folder:
+
+```sh
+git clone https://github.com/raihan2bd/portfolio-mobile-first.git
+```
+
+Navigate to the location of the folder in your machine:
+
+you@your-Pc-name:~$ cd <folder>
+Press Enter to navigate to your local clone.
+
+To get a local copy up and running follow these simple example steps.
 
 👤 **Author**
 
