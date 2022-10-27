@@ -4,19 +4,20 @@
   box-sizing: border-box;
 }
 
-a:hover {
-  color: #172b4d;
-}
-
 .html,
 body {
   font-family: Poppins, sans-serif;
+}
+
+a:hover {
+  color: #172b4d;
 }
 
 .blue {
   color: #6070ff;
 }
 
+/* Css for Header */
 .header_nav {
   display: flex;
   min-height: 10vh;
@@ -44,10 +45,17 @@ body {
   height: auto;
 }
 
+/* Css styles for main_container*/
+.main_container {
+  display: grid;
+  row-gap: 25px;
+}
+
+/* Css Styles for headline section */
+
 .headline {
   padding: 25px;
   display: flex;
-  min-height: 50vh;
   background-size: contain;
   flex-direction: column;
   background-repeat: space;
@@ -93,3 +101,105 @@ body {
 .social_icon {
   max-width: 100%;
 }
+
+
+/* Css Styles for work section */
+
+.work {
+  margin: 25px 0;
+  display: grid;
+  row-gap: 25px;
+  padding: 10px;
+  background: #e5e5e5;
+  justify-items: center;
+}
+
+.work_card {
+  background: #fff;
+  border-radius: 10px;
+  min-height: 3em;
+  border: 1px solid #c6c6c6;
+  padding: 20px;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+}
+
+.work_preview {
+  grid-column: 1/-1;
+  justify-self: center;
+  align-self: center;
+}
+
+.work_preview img {
+  max-width: 100%;
+}
+
+.work_details {
+  grid-column: 1/-1;
+  align-self: center;
+  padding: 10px;
+}
+
+.work_title {
+  margin: 10px 0;
+  color: #172B4D;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+
+}
+
+.work_info {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  color: #7A869A;
+
+}
+
+.work_info > li {
+  margin-right: 10px;
+  list-style-position: inside;
+}
+
+
+.w_s {
+  font-weight: bold;
+  list-style: none;
+  color: #344563;
+}
+
+.work_details_content {
+  margin: 10px 0;
+  padding: 10px 0;
+  color: #344563;
+}
+
+.work_cats {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.work_cats > li {
+  padding: 8px;
+  list-style: none;
+  color: #6070FF;
+  border-radius: 8px;
+  margin-right: 8px;
+  background: #ebebff;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.work_btn {
+  font-size: 18px;
+  color: #396df2;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #396df2;
+}
+
+/* Css styles for about section */
