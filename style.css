@@ -175,12 +175,12 @@ a:hover {
 }
 
 .work_cats {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px 0;
+  display: inline-block;
+  margin: 20px 0;
 }
 
 .work_cats > li {
+  float: left;
   padding: 8px;
   list-style: none;
   color: #6070ff;
