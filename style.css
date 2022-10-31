@@ -177,6 +177,7 @@ a:hover {
 .work_cats {
   margin: 20px 0;
   display: inline-block;
+  clear: both;
 }
 
 .work_cats > li {
