@@ -52,7 +52,6 @@ a:hover {
   display: none;
   list-style: none;
   column-gap: 20px;
-  
 }
 
 .nav_item_action {
@@ -384,11 +383,11 @@ a:hover {
     display: none;
   }
 
-  .nav_items{
-  display: flex;
-  align-self: center;
-  justify-self: center;
-  flex-direction: row;
+  .nav_items {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    flex-direction: row;
   }
 
   .headline {
@@ -419,6 +418,7 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     padding: 25px 50px;
   }
+
   .about-framework {
     margin-top: 60px;
   }
