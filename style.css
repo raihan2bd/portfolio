@@ -18,10 +18,13 @@ a:hover {
 }
 
 /* Css for Header */
+.header {
+  min-height: 70px;
+}
+
 .header_nav {
   display: flex;
-  min-height: 10vh;
-  padding: 10px 20px;
+  padding: 25px 20px;
   align-items: center;
   justify-content: space-between;
 }
@@ -45,10 +48,31 @@ a:hover {
   height: auto;
 }
 
+.nav_items {
+  display: none;
+  list-style: none;
+  column-gap: 20px;
+}
+
+.nav_item_action {
+  font-size: 15px;
+  font-weight: 500;
+  color: #344563;
+  line-height: 20px;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+.nav_item_action:hover {
+  color: #396df2;
+  background-color: #f7f7f9;
+}
+
 /* Css styles for main_container */
 .main_container {
   display: grid;
   row-gap: 25px;
+  background: #ebebff;
 }
 
 /* Css Styles for headline section */
@@ -56,9 +80,11 @@ a:hover {
 .headline {
   padding: 25px;
   display: flex;
-  background-size: contain;
   flex-direction: column;
+  background-color: #fff;
+  background-size: contain;
   background-repeat: space;
+  background-repeat: no-repeat;
   background-image: url("./images/header-shapes-mobile.png");
 }
 
@@ -75,7 +101,6 @@ a:hover {
   margin: 15px 0;
   color: #344563;
   font-weight: 400;
-  background: #fff;
 }
 
 .social_title {
@@ -110,7 +135,6 @@ a:hover {
   display: grid;
   row-gap: 25px;
   padding: 10px;
-  background: #e5e5e5;
   justify-items: center;
 }
 
@@ -124,9 +148,10 @@ a:hover {
 }
 
 .work_preview {
-  grid-column: 1/-1;
-  justify-self: center;
+  display: flex;
   align-self: center;
+  flex-direction: column;
+  justify-self: center;
 }
 
 .work_preview img {
@@ -134,7 +159,6 @@ a:hover {
 }
 
 .work_details {
-  grid-column: 1/-1;
   align-self: center;
   padding: 10px;
 }
@@ -213,6 +237,8 @@ a:hover {
   display: grid;
   row-gap: 15px;
   padding: 0 15px;
+  background-color: #fff;
+  border-top-right-radius: 70px;
 }
 
 .about_ul {
@@ -220,7 +246,7 @@ a:hover {
   flex-direction: column;
   padding: 10px;
   list-style: none;
-  border-bottom: 1px solid #c6c6c6;
+  border-bottom: 1px solid #dfe1e6;
 }
 
 .sub_title {
@@ -264,7 +290,6 @@ a:hover {
 .contact_form {
   color: #fff;
   padding: 20px;
-  margin-top: 20px;
   background-size: contain;
   border-top-left-radius: 70px;
   background-repeat: no-repeat;
@@ -346,4 +371,92 @@ a:hover {
 .btn_submit:hover {
   color: #fff;
   background: #6070ff;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 0 50px;
+  }
+
+  .header_menu {
+    display: none;
+  }
+
+  .nav_items {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    flex-direction: row;
+  }
+
+  .headline {
+    min-height: 916px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headline_container {
+    align-self: center;
+    justify-self: center;
+    max-width: 920px;
+  }
+
+  .work {
+    margin: 25px 100px;
+  }
+
+  .work_card {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .work_card:nth-child(even) .work_preview {
+    order: 2;
+  }
+
+  .work_details {
+    margin-left: 15px;
+  }
+
+  .about {
+    grid-template-columns: 1fr 1fr;
+    padding: 25px 50px;
+  }
+
+  .about-framework {
+    margin-top: 60px;
+  }
+
+  .frame_work_items {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+  }
+
+  .ul_item {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 120px;
+    height: 120px;
+  }
+
+  .ul_item img {
+    margin-bottom: 15px;
+  }
+
+  .contact_form {
+    display: flex;
+    background-position: initial;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./images/contact-form-bg-pc.png");
+  }
+
+  .contact_container {
+    width: 500px;
+    justify-self: center;
+  }
 }
