@@ -422,4 +422,18 @@ a:hover {
   .about-framework {
     margin-top: 60px;
   }
+
+  .contact_form {
+    display: flex;
+    background-position: initial;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./images/contact-form-bg-pc.png");
+  }
+
+  .contact_container {
+    width: 500px;
+    justify-self: center;
+  }
 }
