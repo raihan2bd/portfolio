@@ -414,4 +414,12 @@ a:hover {
   .work_details {
     margin-left: 15px;
   }
+
+  .about {
+    grid-template-columns: 1fr 1fr;
+    padding: 25px 50px;
+  }
+  .about-framework {
+    margin-top: 60px;
+  }
 }
