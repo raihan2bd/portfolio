@@ -390,8 +390,7 @@ a:hover {
   }
 
   .headline {
-    min-height: 400px;
-    background-size: cover;
+    min-height: 916px;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -399,6 +398,8 @@ a:hover {
   }
 
   .headline_container {
+    align-self: center;
+    justify-self: center;
     max-width: 920px;
   }
 
