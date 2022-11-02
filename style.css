@@ -18,10 +18,12 @@ a:hover {
 }
 
 /* Css for Header */
+.header {
+  min-height: 70px;
+}
 .header_nav {
   display: flex;
-  min-height: 10vh;
-  padding: 10px 20px;
+  padding: 25px 20px;
   align-items: center;
   justify-content: space-between;
 }
@@ -45,6 +47,32 @@ a:hover {
   height: auto;
 }
 
+.nav_items {
+  display: flex;
+  list-style: none;
+  column-gap: 20px;
+  flex-direction: row;
+}
+
+.nav_items {
+  align-self: center;
+  justify-self: center;
+}
+
+.nav_item_action {
+  font-size: 15px;
+  font-weight: 500;
+  color: #344563;
+  line-height: 20px;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+.nav_item_action:hover {
+  color: #396df2;
+  background-color: #f7f7f9;
+}
+
 /* Css styles for main_container */
 .main_container {
   display: grid;
@@ -57,6 +85,7 @@ a:hover {
   padding: 25px;
   display: flex;
   background-size: contain;
+  background-repeat: no-repeat;
   flex-direction: column;
   background-repeat: space;
   background-image: url("./images/header-shapes-mobile.png");
@@ -346,4 +375,21 @@ a:hover {
 .btn_submit:hover {
   color: #fff;
   background: #6070ff;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 0 50px;
+  }
+
+  .header_menu {
+    display: none;
+  }
+
+  .headline {
+    min-height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px;
+  }
 }
