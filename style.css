@@ -101,7 +101,6 @@ a:hover {
   margin: 15px 0;
   color: #344563;
   font-weight: 400;
-  background: #fff;
 }
 
 .social_title {
@@ -247,7 +246,7 @@ a:hover {
   flex-direction: column;
   padding: 10px;
   list-style: none;
-  border-bottom: 1px solid #c6c6c6;
+  border-bottom: 1px solid #dfe1e6;
 }
 
 .sub_title {
@@ -394,7 +393,13 @@ a:hover {
     min-height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headline_container {
+    max-width: 920px;
   }
 
   .work {
@@ -421,6 +426,23 @@ a:hover {
 
   .about-framework {
     margin-top: 60px;
+  }
+
+  .frame_work_items {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+  }
+
+  .ul_item {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 120px;
+    height: 120px;
+  }
+
+  .ul_item img {
+    margin-bottom: 15px;
   }
 
   .contact_form {
