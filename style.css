@@ -49,11 +49,10 @@ a:hover {
 }
 
 @keyframes logoanimation {
-  0% {left: -100px;}
-  50% {left: 50px;}
-  100% {left: 0}
+  0% { left: -100px; }
+  50% { left: 50px; }
+  100% { left: 0; }
 }
-
 
 .header_menu {
   padding: 3px 5px;
