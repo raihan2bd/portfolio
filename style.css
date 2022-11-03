@@ -66,6 +66,7 @@ a:hover {
   line-height: 20px;
   padding: 10px 12px;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
 
 .nav_item_action:hover {
@@ -123,14 +124,21 @@ a:hover {
   width: 15px;
   margin-top: 10px;
   margin-right: 10px;
+  transition: padding 0.2s ease-in-out;
 }
 
 .social_link a:hover {
+  padding: 10px;
   color: #172b4d;
+
 }
 
 .social_icon {
   max-width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.social_icon:hover {
+  transform: scale(1.5);
 }
 
 /* Css Styles for work section */
@@ -159,8 +167,18 @@ a:hover {
   justify-self: center;
 }
 
+.work_preview {
+  overflow: hidden;
+}
+
 .work_preview img {
+  transition: transform 0.2s ease-in-out;
   max-width: 100%;
+  
+}
+
+.work_preview:hover img{
+  transform: scale(1.4);
 }
 
 .work_details {
@@ -230,6 +248,7 @@ a:hover {
   border-radius: 10px;
   display: inline-block;
   border: 1px solid #396df2;
+  transition: color 0.5s ease-in-out, background 0.2s ease-in-out;
 }
 
 .atn_btn:hover {
