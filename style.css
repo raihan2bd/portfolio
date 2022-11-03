@@ -130,13 +130,13 @@ a:hover {
 .social_link a:hover {
   padding: 10px;
   color: #172b4d;
-
 }
 
 .social_icon {
   max-width: 100%;
   transition: all 0.2s ease-in-out;
 }
+
 .social_icon:hover {
   transform: scale(1.5);
 }
@@ -165,19 +165,15 @@ a:hover {
   align-self: center;
   flex-direction: column;
   justify-self: center;
-}
-
-.work_preview {
   overflow: hidden;
 }
 
 .work_preview img {
   transition: transform 0.2s ease-in-out;
   max-width: 100%;
-  
 }
 
-.work_preview:hover img{
+.work_preview:hover .project-img {
   transform: scale(1.4);
 }
 
@@ -363,10 +359,15 @@ a:hover {
   line-height: 20px;
   border: 1px solid #fff;
   border-radius: 8px;
+  transition: padding 0.3s ease-in-out;
 }
 
 .form_input:focus {
   border: 1px solid #172b4d;
+}
+
+.form_input:hover {
+  padding-left: 20px;
 }
 
 .form_text_area {
@@ -380,6 +381,11 @@ a:hover {
   min-height: 140px;
   padding: 10px;
   margin: 10px 0;
+  transition: padding 0.3s ease-in-out;
+}
+
+.form_text_area:hover {
+  padding-left: 20px;
 }
 
 .btn_submit {
@@ -391,6 +397,7 @@ a:hover {
   margin: 10px 0;
   align-self: flex-start;
   border: 1px solid #fff;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn_submit:hover {
