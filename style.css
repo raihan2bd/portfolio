@@ -42,7 +42,18 @@ a:hover {
 
 .header_logo a {
   text-decoration: none;
+  position: relative;
+  animation-name: logoanimation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
+
+@keyframes logoanimation {
+  0% {left: -100px;}
+  50% {left: 50px;}
+  100% {left: 0}
+}
+
 
 .header_menu {
   padding: 3px 5px;
