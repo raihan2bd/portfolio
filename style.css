@@ -9,6 +9,11 @@ body {
   font-family: Poppins, sans-serif;
 }
 
+a {
+  color: #6070ff;
+  text-decoration: none;
+}
+
 a:hover {
   color: #172b4d;
 }
@@ -215,7 +220,7 @@ a:hover {
   line-height: 16px;
 }
 
-.default_btn {
+.atn_btn {
   cursor: pointer;
   font-size: 18px;
   margin-top: 20px;
@@ -223,10 +228,11 @@ a:hover {
   padding: 10px 20px;
   background: #fff;
   border-radius: 10px;
+  display: inline-block;
   border: 1px solid #396df2;
 }
 
-.default_btn:hover {
+.atn_btn:hover {
   color: #fff;
   background: #396df2;
 }
