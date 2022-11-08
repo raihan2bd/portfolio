@@ -80,6 +80,11 @@ a:hover {
 }
 
 .nav_item_action:hover {
+  color: #fff;
+  background-color: #344563;
+}
+
+.nav_item_action:hover {
   color: #396df2;
   background-color: #f7f7f9;
 }
