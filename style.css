@@ -84,11 +84,6 @@ a:hover {
   background-color: #344563;
 }
 
-.nav_item_action:hover {
-  color: #396df2;
-  background-color: #f7f7f9;
-}
-
 /* Css styles for main_container */
 .main_container {
   display: grid;
