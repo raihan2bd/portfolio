@@ -36,6 +36,13 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@twitterhandle](https://twitter.com/raihan2bd)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/raihan2bd)
 
+## More about this project
+More about this project
+<a href="https://www.loom.com/share/4df33166c9244b82949f300708d7b3d7">
+    <p>Loom Message - 10 November 2022 - Watch Video</p>
+    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/4df33166c9244b82949f300708d7b3d7-with-play.gif">
+  </a>
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
