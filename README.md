@@ -38,10 +38,11 @@ To get a local copy up and running follow these simple example steps.
 
 ## More about this project
 More about this project
-<a href="https://www.loom.com/share/4df33166c9244b82949f300708d7b3d7">
-    <p>Loom Message - 10 November 2022 - Watch Video</p>
-    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/4df33166c9244b82949f300708d7b3d7-with-play.gif">
-  </a>
+
+![Loom video](https://user-images.githubusercontent.com/35267447/201100532-116dfac2-f16c-4859-9993-a7fa86d34f93.gif)
+
+[Click Here](https://www.loom.com/share/4df33166c9244b82949f300708d7b3d7) and watch the video on Loom
+
 
 ## 🤝 Contributing
 
