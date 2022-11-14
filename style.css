@@ -93,7 +93,6 @@ a:hover {
   column-gap: 20px;
 }
 
-
 .nav_item_action {
   font-size: 15px;
   font-weight: 500;
@@ -145,7 +144,7 @@ a:hover {
 }
 
 .toggle-cross:hover {
-  background: #ff0000;
+  background: #f00;
 }
 
 /* Css styles for main_container */
@@ -297,7 +296,7 @@ a:hover {
   margin: 10px 0;
 }
 
-.work_cats>li {
+.work_cats > li {
   padding: 8px;
   list-style: none;
   color: #6070ff;
@@ -493,6 +492,10 @@ a:hover {
     align-self: center;
     justify-self: center;
     flex-direction: row;
+  }
+
+  .mobile_nav_items {
+    display: none;
   }
 
   .headline {
