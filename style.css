@@ -18,6 +18,22 @@ a:hover {
   color: #172b4d;
 }
 
+.df {
+  display: flex !important;
+}
+
+.dn {
+  display: none !important;
+}
+
+.dib {
+  display: inline-block !important;
+}
+
+.db {
+  display: block !important;
+}
+
 .blue {
   color: #6070ff;
 }
@@ -49,9 +65,17 @@ a:hover {
 }
 
 @keyframes logoanimation {
-  0% { left: -100px; }
-  50% { left: 50px; }
-  100% { left: 0; }
+  0% {
+    left: -100px;
+  }
+
+  50% {
+    left: 50px;
+  }
+
+  100% {
+    left: 0;
+  }
 }
 
 .header_menu {
@@ -82,6 +106,45 @@ a:hover {
 .nav_item_action:hover {
   color: #fff;
   background-color: #344563;
+}
+
+.mobile_nav_items {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  flex-direction: column;
+  backdrop-filter: blur(7px);
+  padding: 70px 15px 15px 10px;
+  -webkit-backdrop-filter: blur(7px);
+  background: rgba(46, 64, 228, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.mobile_nav_items .nav_item_action {
+  width: 100%;
+  display: block;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.toggle-cross {
+  top: 20px;
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  text-align: center;
+  right: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.toggle-cross:hover {
+  background: #f00;
 }
 
 /* Css styles for main_container */
@@ -429,6 +492,10 @@ a:hover {
     align-self: center;
     justify-self: center;
     flex-direction: row;
+  }
+
+  .mobile_nav_items {
+    display: none;
   }
 
   .headline {
