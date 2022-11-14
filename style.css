@@ -18,6 +18,22 @@ a:hover {
   color: #172b4d;
 }
 
+.df {
+  display: flex !important;
+}
+
+.dn {
+  display: none !important;
+}
+
+.dib {
+  display: inline-block !important;
+}
+
+.db {
+  display: block !important;
+}
+
 .blue {
   color: #6070ff;
 }
@@ -49,9 +65,17 @@ a:hover {
 }
 
 @keyframes logoanimation {
-  0% { left: -100px; }
-  50% { left: 50px; }
-  100% { left: 0; }
+  0% {
+    left: -100px;
+  }
+
+  50% {
+    left: 50px;
+  }
+
+  100% {
+    left: 0;
+  }
 }
 
 .header_menu {
@@ -68,6 +92,7 @@ a:hover {
   list-style: none;
   column-gap: 20px;
 }
+
 
 .nav_item_action {
   font-size: 15px;
@@ -233,7 +258,7 @@ a:hover {
   margin: 10px 0;
 }
 
-.work_cats > li {
+.work_cats>li {
   padding: 8px;
   list-style: none;
   color: #6070ff;
