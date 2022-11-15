@@ -549,11 +549,14 @@ a:hover {
   padding-left: 20px;
 }
 
+.right-block .work_cats {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ebecf0 !important;
+}
+
 .actions {
   display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .article-btn {
@@ -566,7 +569,8 @@ a:hover {
   font-size: 15px;
   line-height: 20px;
   font-weight: 500;
-  min-width: 146px;
+  max-width: 146px;
+  margin: 10px;
 }
 
 .article-btn:hover {
