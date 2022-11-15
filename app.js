@@ -159,6 +159,96 @@ function fetchOnePoject(id) {
       project = projects[i]
     }
   }
-  console.log(project)
+
+  if (project) {
+    let article = dcl('article')
+    article.classList.add('popup_article')
+    article.setAttribute('id', project.id)
+
+    let articleModal = dcl()
+    articleModal.classList.add('article-modal')
+    // Article title
+    const workTitle = dcl('h2');
+    workTitle.classList.add('work_title');
+    workTitle.innerText = project.title;
+
+    // work_info
+    const workInfo = dcl('ul');
+    workInfo.classList.add('work_info');
+
+    // work_info_item
+    project.frame.forEach((f) => {
+      const workInfoItem = dcl('li');
+      workInfoItem.classList.add('w_info_item');
+      workInfoItem.innerText = f;
+      workInfo.appendChild(workInfoItem);
+    });
+
+    // image 
+    const articleImage = dcl();
+    articleImage.classList.add('article-image');
+    articleImage.innerHTML = `<img class='article-image' src='${project.imageUrl}' alt='${project.title}'/>`;
+
+    // project block
+    let projectBlock = dcl()
+    projectBlock.classList.add('article-block')
+
+    // left block
+    let leftBlock = dcl()
+    leftBlock.classList.add('left-block')
+    // article_details_content
+    const workDetailsContent = dcl('p');
+    workDetailsContent.classList.add('work_details_content');
+    workDetailsContent.innerText = project.projectDetails;
+    leftBlock.append(workDetailsContent)
+
+    // right block
+    let rightBlock = dcl()
+    rightBlock.classList.add('right-block')
+
+    // work_cat
+    const workCat = dcl('ul');
+    workCat.classList.add('work_cats');
+    project.tags.forEach((tag) => {
+      const catLi = dcl('li');
+      catLi.innerText = tag;
+      workCat.appendChild(catLi);
+    });
+
+    // actions
+    const actions = dcl()
+    actions.classList.add('actions')
+
+    // live link
+    let liveLink = dcl('a')
+    liveLink.classList.add('article-btn')
+    liveLink.setAttribute('href', project.liveLink)
+    liveLink.innerHTML = `See Live <span class="btn-icon"><img src="./images/btn-live.png" alt= "Live"/></span>`
+
+    // source link
+    let sourceLink = dcl('a')
+    sourceLink.classList.add('article-btn')
+    sourceLink.setAttribute('href', project.sourceLink)
+    sourceLink.innerHTML = `See Live <span class="btn-icon"><img src="./images/btn-live.png" alt= "Live"/></span>`
+
+    // appending link
+    actions.append(liveLink, sourceLink)
+
+    // appending rightBlock
+    rightBlock.append(workCat, actions)
+
+    // appending projectBlock
+    projectBlock.append(leftBlock, rightBlock)
+
+    // appending article-modal
+    articleModal.append(workTitle, workInfo, articleImage, projectBlock)
+
+    //appending article-modal to article
+    article.append(articleModal)
+    // end of if condition
+    document.querySelector('main').append(article)
+  } else {
+    return
+  }
 
 }
