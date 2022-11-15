@@ -55,7 +55,7 @@ const projectData = [
     sourceLink: '#',
   },
   {
-    id: 'project1',
+    id: 'project3',
     title: 'Tonic',
     frame: ['CANOPY', 'Back End Dev', 2015],
     primaryText: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -66,7 +66,7 @@ const projectData = [
     sourceLink: '#',
   },
   {
-    id: 'project2',
+    id: 'project4',
     title: 'Multi-Post Stories',
     frame: ['FACEBOOK', 'FULL STACK DEV', 2015],
     primaryText: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -135,6 +135,9 @@ function fetchAllProject() {
     atnBrn.classList.add('atn_btn');
     atnBrn.innerText = 'See More';
     atnBrn.setAttribute('id', project.id);
+    atnBrn.addEventListener('click', () => {
+      fetchOnePoject(project.id)
+    })
     workDetails.appendChild(atnBrn);
 
     card.appendChild(workDetails);
@@ -145,3 +148,17 @@ function fetchAllProject() {
 window.onload = () => {
   fetchAllProject();
 };
+
+// Fetch single project from projectData
+function fetchOnePoject(id) {
+  const projects = projectData;
+
+  let project;
+  for (let i = 0; i < projectData.length; i++) {
+    if (projects[i].id === id) {
+      project = projects[i]
+    }
+  }
+  console.log(project)
+
+}
