@@ -41,6 +41,11 @@ a:hover {
 /* Css for Header */
 .header {
   min-height: 70px;
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  box-shadow: 3px 3px 10px #c0c0c0;
+  z-index: 1000;
 }
 
 .header_nav {
@@ -135,12 +140,14 @@ a:hover {
 .toggle-cross {
   top: 20px;
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 12px;
   position: absolute;
   text-align: center;
   right: 20px;
   padding: 5px;
   cursor: pointer;
+  border-radius: 3px;
 }
 
 .toggle-cross:hover {
@@ -157,6 +164,7 @@ a:hover {
 /* Css Styles for headline section */
 
 .headline {
+  margin-top: 70px;
   padding: 25px;
   display: flex;
   flex-direction: column;
