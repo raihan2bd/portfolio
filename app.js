@@ -1,4 +1,3 @@
-
 // defining a dom shortcut function.
 function dcl(t = 'div') {
   if (!t) {

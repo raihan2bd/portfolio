@@ -303,7 +303,7 @@ a:hover {
   margin: 10px 0;
 }
 
-.work_cats > li {
+.work_cats li {
   padding: 8px;
   list-style: none;
   color: #6070ff;
@@ -485,7 +485,7 @@ a:hover {
   background: #6070ff;
 }
 
-/*Project Details Article*/
+/* Project Details Article */
 .popup_article {
   width: 100%;
   height: 100%;
@@ -584,7 +584,7 @@ a:hover {
   position: fixed;
 }
 
-/* Media Query*/
+/* Media Query */
 @media screen and (min-width: 768px) {
   .header {
     padding: 0 50px;
@@ -628,7 +628,7 @@ a:hover {
     flex-direction: row;
   }
 
-  .work_card:nth-child(even) .work_preview {
+  .work_card:nth-child(even).work_preview {
     order: 2;
   }
 
