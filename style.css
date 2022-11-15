@@ -296,7 +296,7 @@ a:hover {
   margin: 10px 0;
 }
 
-.work_cats > li {
+.work_cats>li {
   padding: 8px;
   list-style: none;
   color: #6070ff;
@@ -523,6 +523,10 @@ a:hover {
 
   .work_card:nth-child(even) .work_preview {
     order: 2;
+  }
+
+  .work_preview {
+    max-width: 50%;
   }
 
   .work_details {
