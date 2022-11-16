@@ -257,9 +257,43 @@ function fetchAllProject() {
   });
 }
 
+// selecting input elements
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
+
+// Store formData in localStorage
+function loadLocalStorage() {
+  const formData = JSON.parse(window.localStorage.getItem('formData'));
+  if (formData) {
+    nameInput.value = formData.name;
+    emailInput.value = formData.email;
+    messageInput.value = formData.message;
+  }
+}
+
+// OnChange function will store form data in localStorage
+function onChange(e) {
+  let formData = JSON.parse(localStorage.getItem('formData'));
+  if (!formData) {
+    formData = {};
+  }
+  // saving form data on localStorage
+  const m = e.target.name;
+  formData[m] = e.target.value;
+  formData = JSON.stringify(formData);
+  window.localStorage.setItem('formData', formData);
+}
+
+// Fire event on form input
+nameInput.addEventListener('change', onChange);
+emailInput.addEventListener('change', onChange);
+messageInput.addEventListener('change', onChange);
+
 // Load Data in dom on the fly
 window.onload = () => {
   fetchAllProject();
+  loadLocalStorage();
 };
 
 // Form Validation
