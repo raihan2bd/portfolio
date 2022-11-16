@@ -257,9 +257,25 @@ function fetchAllProject() {
   });
 }
 
+// selecting input elements
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
+
+// Store formData in localStorage
+function loadLocalStorage() {
+  let formData =JSON.parse(window.localStorage.getItem('formData'));
+  if(formData) {
+    nameInput.value = formData.name;
+    emailInput.value = formData.email;
+    messageInput.value = formData.message;
+  }
+}
+
 // Load Data in dom on the fly
 window.onload = () => {
   fetchAllProject();
+  loadLocalStorage()
 };
 
 // Form Validation
