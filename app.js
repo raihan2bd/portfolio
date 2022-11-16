@@ -264,8 +264,8 @@ const messageInput = document.getElementById('message');
 
 // Store formData in localStorage
 function loadLocalStorage() {
-  let formData =JSON.parse(window.localStorage.getItem('formData'));
-  if(formData) {
+  const formData = JSON.parse(window.localStorage.getItem('formData'));
+  if (formData) {
     nameInput.value = formData.name;
     emailInput.value = formData.email;
     messageInput.value = formData.message;
@@ -273,27 +273,27 @@ function loadLocalStorage() {
 }
 
 // OnChange function will store form data in localStorage
-function onChange (e) {
+function onChange(e) {
   let formData = JSON.parse(localStorage.getItem('formData'));
-  if(!formData) {
-    formData = {}
+  if (!formData) {
+    formData = {};
   }
   // saving form data on localStorage
-  let m = e.target.name;
+  const m = e.target.name;
   formData[m] = e.target.value;
-  formData = JSON.stringify(formData)
-  window.localStorage.setItem('formData', formData)
+  formData = JSON.stringify(formData);
+  window.localStorage.setItem('formData', formData);
 }
 
 // Fire event on form input
-nameInput.addEventListener('change', onChange)
-emailInput.addEventListener('change', onChange)
-messageInput.addEventListener('change', onChange)
+nameInput.addEventListener('change', onChange);
+emailInput.addEventListener('change', onChange);
+messageInput.addEventListener('change', onChange);
 
 // Load Data in dom on the fly
 window.onload = () => {
   fetchAllProject();
-  loadLocalStorage()
+  loadLocalStorage();
 };
 
 // Form Validation
