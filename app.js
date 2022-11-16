@@ -257,6 +257,33 @@ function fetchAllProject() {
   });
 }
 
+// Load Data in dom on the fly
 window.onload = () => {
   fetchAllProject();
 };
+
+// Form Validation
+function onSubmit(e) {
+  const inputEmail = document.getElementById('email');
+  const formInfo = document.getElementById('form-info');
+  const email = inputEmail.value;
+
+  if (email !== email.toLowerCase()) {
+    e.preventDefault();
+    inputEmail.classList.add('invalid');
+    formInfo.classList.add('error');
+    formInfo.innerText = 'Error form is not sent! The Email should be in lower case!!';
+  } else {
+    inputEmail.classList.remove('invalid');
+    formInfo.classList.remove('error');
+  }
+}
+const contactForm = document.getElementById('contact-form');
+contactForm.addEventListener('submit', onSubmit);
+const inputEmail = document.getElementById('email');
+const formInfo = document.getElementById('form-info');
+inputEmail.addEventListener('change', (e) => {
+  inputEmail.classList.remove('invalid');
+  formInfo.classList.remove('error');
+  formInfo.innerText = "";
+})
