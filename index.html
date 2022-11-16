@@ -220,13 +220,15 @@
           </p>
           <form
             class="form_container"
-            action="https://formspree.io/f/mnqroaaw"
+            id="contact-form"
             method="POST"
+            action="https://formspree.io/f/mnqroaaw"
           >
             <fieldset class="form_inputs">
               <input
                 class="form_input"
                 name="name"
+                id="name"
                 type="text"
                 placeholder="Your Name"
                 maxlength="30"
@@ -235,6 +237,7 @@
               <input
                 class="form_input"
                 name="email"
+                id="email"
                 type="email"
                 placeholder="example@me.com"
                 required
@@ -242,10 +245,12 @@
               <textarea
                 class="form_text_area"
                 name="message"
+                id="message"
                 placeholder="Write your message here"
                 maxlength="500"
                 required
               ></textarea>
+              <small id="form-info"></small>
               <button type="submit" class="btn_submit">Get It Touch</button>
             </fieldset>
           </form>

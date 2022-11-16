@@ -485,6 +485,17 @@ a:hover {
   background: #6070ff;
 }
 
+.invalid {
+  border: 1px solid#ff0000;
+}
+
+.error {
+  color: #770505;
+  background: #fdadad;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 /* Project Details Article */
 .popup_article {
   width: 100%;
