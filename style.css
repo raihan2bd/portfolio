@@ -7,6 +7,7 @@
 .html,
 body {
   font-family: Poppins, sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -44,7 +45,7 @@ a:hover {
   position: fixed;
   background: #fff;
   width: 100%;
-  box-shadow: 3px 3px 10px #c0c0c0;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
 
@@ -111,6 +112,11 @@ a:hover {
 .nav_item_action:hover {
   color: #fff;
   background-color: #344563;
+}
+
+.active {
+  color: #fff;
+  background: #344563 !important;
 }
 
 .mobile_nav_items {
@@ -182,6 +188,10 @@ a:hover {
   font-weight: 700;
   color: #172b4d;
   line-height: 52px;
+}
+
+.type-animation {
+  min-height: 208px;
 }
 
 .headline_content {
@@ -477,12 +487,18 @@ a:hover {
   margin: 10px 0;
   align-self: flex-start;
   border: 1px solid #fff;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  box-shadow: 0 2px 5px #080a18;
 }
 
 .btn_submit:hover {
   color: #fff;
-  background: #6070ff;
+  background: #4053fc;
+}
+
+.btn_submit:active {
+  color: #c6c6c6;
+  transform: translateY(-1px);
 }
 
 .invalid {
@@ -634,6 +650,10 @@ a:hover {
     max-width: 920px;
   }
 
+  .type-animation {
+    min-height: 104px;
+  }
+
   .work {
     margin: 25px 100px;
   }
@@ -688,6 +708,10 @@ a:hover {
     justify-content: center;
     align-items: center;
     background-image: url("./images/contact-form-bg-pc.png");
+  }
+
+  .btn_submit {
+    align-self: center;
   }
 
   .contact_container {
