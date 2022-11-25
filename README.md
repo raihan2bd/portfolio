@@ -38,13 +38,6 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@twitterhandle](https://twitter.com/raihan2bd)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/raihan2bd)
 
-## More about this project
-More about this project
-
-![Loom video](https://user-images.githubusercontent.com/35267447/201100532-116dfac2-f16c-4859-9993-a7fa86d34f93.gif)
-
-[Click Here](https://www.loom.com/share/4df33166c9244b82949f300708d7b3d7) and watch the video on Loom
-
 
 ## 🤝 Contributing
 
