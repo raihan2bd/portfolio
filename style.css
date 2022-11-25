@@ -656,6 +656,7 @@ a:hover {
 
   .work {
     margin: 25px 100px;
+    row-gap: 71px;
   }
 
   .work_card {
