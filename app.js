@@ -7,13 +7,13 @@ function dcl(t = 'div') {
 }
 
 // This block for Type writer effect on headline section
-const heading = ` I am Abu Raihan , <br/> Glad to see you!`;
+const heading = ' I am Abu Raihan , <br/> Glad to see you!';
 const hArr = heading.split(' ');
 let typeCount = 1;
 function typeWriter() {
-  if(typeCount<hArr.length) {
+  if (typeCount < hArr.length) {
     document.querySelector('.type-animation').innerHTML += ` ${hArr[typeCount]}`;
-    typeCount++;
+    typeCount += 1;
     setTimeout(typeWriter, 200);
   }
 }
