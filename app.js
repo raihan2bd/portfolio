@@ -6,6 +6,38 @@ function dcl(t = 'div') {
   return document.createElement(t);
 }
 
+// This block for Type writer effect on headline section
+const heading = ' I am Abu Raihan , <br/> Glad to see you!';
+const hArr = heading.split(' ');
+let typeCount = 1;
+function typeWriter() {
+  if (typeCount < hArr.length) {
+    document.querySelector('.type-animation').innerHTML += ` ${hArr[typeCount]}`;
+    typeCount += 1;
+    setTimeout(typeWriter, 200);
+  }
+}
+
+typeWriter();
+
+// this peace of code is responsible for scroll spy
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.nav_item_action');
+window.onscroll = () => {
+  sections.forEach((section) => {
+    const top = window.scrollY;
+    const offset = section.offsetTop - 200;
+    const height = section.offsetHeight;
+    const id = section.getAttribute('id');
+    if (top >= offset && top < height + offset) {
+      navLinks.forEach((link) => {
+        link.classList.remove('active');
+        document.querySelectorAll(`a[href*=${id}]`).forEach((item) => item.classList.add('active'));
+      });
+    }
+  });
+};
+
 // Navigation Menu
 const mobileMenu = document.querySelector('.header_menu');
 const navItems = document.querySelector('.mobile_nav_items');
