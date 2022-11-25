@@ -4,7 +4,9 @@
 
 ## Built With
 
-- Html and CSS
+- Html
+- CSS
+- Javascript
 - Technologies used
   I use nodejs and git for linting the project
 
