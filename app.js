@@ -66,47 +66,47 @@ selectNavItems.forEach((item) => {
 const projectData = [
   {
     id: 'project1',
-    title: 'Tonic',
-    frame: ['CANOPY', 'Back End Dev', 2015],
-    primaryText: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    title: 'Todolist',
+    frame: ['Microverse', 'Frontend', 2022],
+    primaryText: 'To-do list is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
     tags: ['HTML', 'CSS', 'Javascript'],
-    imageUrl: './images/portfolio-1.png',
-    projectDetails: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    liveLink: '#',
-    sourceLink: '#',
+    imageUrl: './images/todo-list-js.png',
+    projectDetails: 'This is A simple but effective and responsive (mobile first) Microverse exercise project. To-do list is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
+    liveLink: 'https://raihan2bd.github.io/Todo-List/',
+    sourceLink: 'https://github.com/raihan2bd/Todo-List',
   },
   {
     id: 'project2',
-    title: 'Multi-Post Stories',
-    frame: ['FACEBOOK', 'FULL STACK DEV', 2015],
-    primaryText: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    title: 'Awesome Book',
+    frame: ['Microverse', 'Front-End', 2022],
+    primaryText: 'Awesome books is a simple website that displays a list of books and allows you to add and remove books from that list.',
     tags: ['HTML', 'CSS', 'Javascript'],
-    imageUrl: './images/portfolio-2.png',
-    projectDetails: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    liveLink: '#',
-    sourceLink: '#',
+    imageUrl: './images/awesome-book-js1.png',
+    projectDetails: 'This is A simple but effective and responsive (mobile first) Microverse exercize project. Awesome books is a simple website that displays a list of books and allows you to add and remove books from that list.',
+    liveLink: 'https://raihan2bd.github.io/Awesome-Books/',
+    sourceLink: 'https://github.com/raihan2bd/Awesome-Books',
   },
   {
     id: 'project3',
-    title: 'Tonic',
-    frame: ['CANOPY', 'Back End Dev', 2015],
-    primaryText: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    title: 'Full-Stack Bootcamp',
+    frame: ['Microverse', 'Front-End', 2022],
+    primaryText: 'This is A simple but effective and responsive (mobile first) Microverse Capstone Project 1. The theme about this project is a online full stack webdevelopment bootcamp.',
     tags: ['HTML', 'CSS', 'Javascript'],
-    imageUrl: './images/portfolio-3.png',
-    projectDetails: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    liveLink: '#',
-    sourceLink: '#',
+    imageUrl: './images/code-with-raihan-js.png',
+    projectDetails: 'This is A simple but effective and responsive (mobile first) Microverse Capstone Project 1. The theme about this project is a online full stack webdevelopment bootcamp. Boost your career joining our highly professional fullstack Bootcamp and start a remote international fulltime job. Through out this Bootcamp your learning path will be practical and beginner friendly.',
+    liveLink: 'https://raihan2bd.github.io/code-with-raihan/',
+    sourceLink: 'https://github.com/raihan2bd/code-with-raihan/',
   },
   {
     id: 'project4',
-    title: 'Multi-Post Stories',
-    frame: ['FACEBOOK', 'FULL STACK DEV', 2015],
-    primaryText: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    title: 'Contact Manager',
+    frame: ['Microverse', 'Front-End', 2018],
+    primaryText: 'Simple contract manager app using Javascript, Html and css. I fetch contact form another external api using axios and display them on the dom using javascript.',
     tags: ['HTML', 'CSS', 'Javascript'],
-    imageUrl: './images/portfolio-4.png',
-    projectDetails: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    liveLink: '#',
-    sourceLink: '#',
+    imageUrl: './images/contact-manager.png',
+    projectDetails: 'Simple contract manager app using Javascript, Html and css. I fetch contact form another external api using axios and display them on the dom using javascript.',
+    liveLink: 'https://raihan2bd.github.io/contactmanager/#/',
+    sourceLink: 'https://github.com/raihan2bd/contactmanager',
   },
 ]; // End of portfolio data
 
@@ -195,7 +195,7 @@ function fetchOnePoject(id) {
     const sourceLink = dcl('a');
     sourceLink.classList.add('article-btn');
     sourceLink.setAttribute('href', project.sourceLink);
-    sourceLink.innerHTML = 'See Live <span class="btn-icon"><img src="./images/btn-github.png" alt= "Live"/></span>';
+    sourceLink.innerHTML = 'See Source <span class="btn-icon"><img src="./images/btn-github.png" alt= "Live"/></span>';
 
     // appending link
     actions.append(liveLink, sourceLink);
