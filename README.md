@@ -11,7 +11,7 @@
   I use nodejs and git for linting the project
 
 ## Live Demo
-[Live Demo Link](https://raihan2bd.github.io/portfolio-mobile-first/)
+[Live Demo Link](https://raihan2bd.github.io/portfolio/)
 
 ## Getting Started
 
